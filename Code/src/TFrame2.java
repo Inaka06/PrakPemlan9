@@ -70,7 +70,18 @@ public class TFrame2 extends Frame {
             if (source == cbNilaiAngka) {
                 txtHasil.setText(hasil);
             } else if (source == cbNilaiHuruf) {
-                txtHasil.setText("belum ada");
+                int total = tugas / 4 + kuis / 4 + UTS / 4 + UAS / 4;
+                String grade = "";
+                if (total >= 80) grade = "A";
+                else if (total >= 75) grade = "B+";
+                else if (total >= 65) grade = "B";
+                else if (total >= 60) grade = "C+";
+                else if (total >= 50) grade = "C";
+                else if (total >= 45) grade = "D+";
+                else if (total >= 35) grade = "D";
+                else grade = "E";
+
+                txtHasil.setText(grade);
             }
         }
     }

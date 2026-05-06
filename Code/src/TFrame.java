@@ -57,6 +57,10 @@ public class TFrame extends Frame {
             String hasil = String.valueOf(tugas / 4 + kuis / 4 + UTS / 4 + UAS / 4);
             txtHasil.setText(hasil);
         }
+
     }
+
 }
+
+
 
